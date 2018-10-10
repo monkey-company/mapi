@@ -22,8 +22,8 @@ define("DBHOST", "localhost");
 define("DBPORT", "3306");
 define("DBTYPE", "mysql");
 define("DBNAME", "mapi");
-define("DBUSER", "user");
-define("DBPASS", "password");
+define("DBUSER", "root");
+define("DBPASS", "");
 
 include "lib/database/data_connect.php";
 $db = pdo_connect_dbserver(true, DBTYPE, DBHOST, DBNAME, DBUSER, DBPASS, DBPORT);
