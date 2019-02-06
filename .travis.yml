@@ -1,11 +1,7 @@
 language: php
 php:
+  - '5.4'
   - '5.6'
-  - '7.1'
+  - '7.0'
   - hhvm
   - nightly
-services:
-  - mysql
-before_install:
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS mapi;'  
-  - mysql -u root --default-character-set=utf8 mapi < assets/sql/mapi.sql
